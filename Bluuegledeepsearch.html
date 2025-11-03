@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        #bar{
+                position:fixed;
+                background-color: #514f4f;
+                display: flex;
+                padding: 20px;
+                width: 100%;
+                height: 40px;
+                top:0px;
+            }
+        
+        
+        body{
+                background-color: #272525;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #deepinput input[type="text"]{
+                position:absolute;
+                height: 10px;
+                width: 310px;
+                top:216px;
+                left: 490px;
+                padding: 10px 15px;
+                font-size:20px;
+                color:rgb(4, 59, 64);
+            }
+
+            #deepinput2 input[type="text"]{
+                position:absolute;
+                height: 10px;
+                width: 310px;
+                top:329px;
+                left: 490px;
+                padding: 10px 15px;
+                font-size:20px;
+                color:rgb(4, 59, 64);
+            }
+
+            #deepinput3 input[type="text"]{
+                position:absolute;
+                height: 10px;
+                width: 310px;
+                top:440px;
+                left: 490px;
+                padding: 10px 15px;
+                font-size:20px;
+                color:rgb(4, 59, 64);
+            }
+
+            #deepinput4 input[type="text"]{
+                position:absolute;
+                height: 10px;
+                width: 310px;
+                top:550px;
+                left: 490px;
+                padding: 10px 15px;
+                font-size:20px;
+                color:rgb(4, 59, 64);
+            }
+            
+            #subimitbtt{
+                position:relative;
+                width: 100px;
+                right: 100px;
+                top:630px;
+                right: 180px;
+                padding: 10px 15px;
+                font-size:20px;
+                color:rgb(4, 59, 64);
+            }
+
+            #text1{
+                position:relative;
+                top:150px;
+                right:769px;
+                font-size: 12px;
+                color:rgb(35, 87, 132);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+             #text2{
+                position:relative;
+                top:200px;
+                right:715px;
+                font-size: 12px;
+                color:rgb(35, 87, 132);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #text3{
+                position:relative;
+                top:250px;
+                right:760px;
+                font-size: 12px;
+                color:rgb(35, 87, 132);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #text4{
+                position:relative;
+                top:300px;
+                right:746px;
+                font-size: 12px;
+                color:rgb(35, 87, 132);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #back a{
+                position:absolute;
+                right:120px;
+                top:30px;
+                padding:10px 20px;
+                color:rgb(153, 185, 243);
+                text-decoration: none;
+                font-weight:bold;
+            }
+
+            #googleimg{
+                position:absolute;
+                width:250px;
+                height:100px;
+                bottom:855px;
+                left:100px;
+
+            }
+            
+            #iconimage{
+                position:absolute;
+                top:7px;
+                right:20px;
+                width: 70px;
+            }
+
+            #titledeep{
+                position:absolute;
+                top:90px;
+                left:90px;
+                font-size:60px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                color:rgb(35, 87, 132);
+
+            }
+            
+            </style>
+        
+        <title>deep_searchtest</title>
+        
+        </head>
+    <body>
+        
+        <form id="deep_search" action="https://www.google.com/search" method="get" ></form>
+
+        <div id="bar"></div>
+        
+        <form id="deepinput" class="search_form">
+            <input type="text" name="as_q" placeholder="deep_search" form="deep_search" autocomplete="off">
+        </form>
+
+        <form id="deepinput2" class="search_form">
+            <input type="text" name="as_epq" placeholder="deep search" form="deep_search" autocomplete="off">
+        </form>
+
+        <form id="deepinput3" class="search_form">
+            <input type="text" name="as_oq" placeholder="deep search" form="deep_search" autocomplete="off">
+        </form>
+
+        <form id="deepinput4" class="search_form">
+            <input type="text" name="as_eq" placeholder="deep search" form="deep_search" autocomplete="off">
+        
+        </form>
+
+            <input id="subimitbtt" type="submit" value="submit" form="deep_search">
+
+
+
+        <div id="titledeep">Advanced Search</div>
+        
+        <div id="text1"> <h1>All these words:</h1> </div>
+         <div id="text2"> <h1>This exact word or phrase:</h1> </div>
+         <div id="text3"> <h1>Any of this words:</h1> </div>
+         <div id="text4"> <h1>None of these words:</h1> </div>
+
+        <div id="back"> <a href="Bluuegle.html"> Normal search</div>
+
+        <div> <img id="googleimg" src="guugle.jpg" alt="googleclone"> </div>
+        <div><img id="iconimage" src="icon.jpg"></div>
+    </body>
+</html>
