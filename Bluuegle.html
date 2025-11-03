@@ -1,9 +1,11 @@
+<!-- Frist project from Harvard cs50 web course in github, my code have been suggested to several changes -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Search</title>
         <style>
             
+        /* top bar */
             #bar{
                 position:fixed;
                 background-color: #514f4f;
@@ -14,6 +16,8 @@
                 top:0px;
             }
 
+            /* background */
+            
             body{
                 background-color: #272525;
                 display:flex;
@@ -54,6 +58,8 @@
                 
             }
 
+            /* Principal search subbimit button */
+            
             #bottsearch{
                 position: relative;
                 top:100px;
@@ -65,6 +71,7 @@
                 
             }
 
+            /* "I feeling lucky" button (not functional yet) */
             #bottlucky{
                 position: relative;
                 top:100px;
@@ -76,6 +83,8 @@
                 
             }
 
+            /* search bar */
+            
             input[type="text"]{
                 position:relative;
                 width: 420px;
@@ -100,6 +109,7 @@
              width: 160px;
             }
 
+            /* harvard-image */
             #iconimage{
                 position:absolute;
                 top:7px;
@@ -107,6 +117,7 @@
                 width: 70px;
             }
 
+            /* bluuegle-image */
             #imagegoogle{
                 position:relative;
             }
@@ -115,16 +126,24 @@
     </head>
     <body>
         <div id="bar"> </div>
+        
+        <!-- advanced-search page link -->
         <div style="color:rgb(56, 86, 143)" id="bott">
             <a href="Bluuegledeepsearch.html"> advanced search </a>
         </div>
+        
+        <!-- image-search page link (not functional yet) -->
         <div id="bott2" style="color:rgb(56, 86, 143)" id="bott">
-            <a href="testdeepsearch.html"> Image search </a>
+            <a href=""> Image search </a>
         </div>
+        
+        <!-- Bluegle-image -->
         <div>
             <img src="guugle.jpg"  alt="gogle" width="700" height="300"> 
         </div>
-            <div>
+           
+        <!-- search and subbitmit function -->
+        <div>
             <form id=#my action="https://www.google.com/search" >
             <input id="input" type="text" name="q">
             <input id="bottsearch" type="submit" value="Google Search"> 
