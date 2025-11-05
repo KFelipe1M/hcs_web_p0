@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <style>
-        #bar{
+        
+            
+            #bar{
                 position:fixed;
                 background-color: #514f4f;
                 display: flex;
@@ -156,10 +158,13 @@
         </head>
     <body>
         
+        <!--  -->
         <form id="deep_search" action="https://www.google.com/search" method="get" ></form>
 
         <div id="bar"></div>
         
+        <!-- all these forms refers to search field functions -->
+        <!-- autocomplete off, not shows previus search -->
         <form id="deepinput" class="search_form">
             <input type="text" name="as_q" placeholder="deep_search" form="deep_search" autocomplete="off">
         </form>
@@ -181,16 +186,18 @@
 
 
 
+        <!-- page text -->
         <div id="titledeep">Advanced Search</div>
         
-        <div id="text1"> <h1>All these words:</h1> </div>
-         <div id="text2"> <h1>This exact word or phrase:</h1> </div>
-         <div id="text3"> <h1>Any of this words:</h1> </div>
-         <div id="text4"> <h1>None of these words:</h1> </div>
+        <div id="text1"> <h1>All these words:</h1> </div> <!-- for deepinput -->
+         <div id="text2"> <h1>This exact word or phrase:</h1> </div> <!-- for deepinput3 -->
+         <div id="text3"> <h1>Any of this words:</h1> </div> <!-- for deepinput2 -->
+         <div id="text4"> <h1>None of these words:</h1> </div> <!-- for deepinput4 -->
 
-        <div id="back"> <a href="Bluuegle.html"> Normal search</div>
+        <div id="back"> <a href="Bluuegle.html"> Normal search</div> <!-- back to main page link -->
 
-        <div> <img id="googleimg" src="guugle.jpg" alt="googleclone"> </div>
-        <div><img id="iconimage" src="icon.jpg"></div>
+        <!-- images -->
+        <div> <img id="googleimg" src="guugle.jpg" alt="googleclone"> </div> <!-- googlelogo -->
+        <div><img id="iconimage" src="icon.jpg"></div> <!-- profile image -->
     </body>
 </html>
