@@ -3,7 +3,7 @@
     <head>
         <style>
         
-            
+            /* top bar */
             #bar{
                 position:fixed;
                 background-color: #514f4f;
@@ -15,7 +15,8 @@
             }
         
         
-        body{
+            /* background */ 
+            body{
                 background-color: #272525;
                 display:flex;
                 flex-direction: column;
@@ -23,7 +24,9 @@
                 justify-content: center;
             }
             
-            #deepinput input[type="text"]{
+            /* all 'deepinputs, 2, 3, 4' refers to advanced fields of search*/
+            /* all the words*/
+            #deepinput input[type="text"]{ 
                 position:absolute;
                 height: 10px;
                 width: 310px;
@@ -34,6 +37,7 @@
                 color:rgb(4, 59, 64);
             }
 
+            /* 'this exact word or phrase' search field*/
             #deepinput2 input[type="text"]{
                 position:absolute;
                 height: 10px;
@@ -44,7 +48,8 @@
                 font-size:20px;
                 color:rgb(4, 59, 64);
             }
-
+            
+            /* 'any of this words' search field*/
             #deepinput3 input[type="text"]{
                 position:absolute;
                 height: 10px;
@@ -55,7 +60,8 @@
                 font-size:20px;
                 color:rgb(4, 59, 64);
             }
-
+            
+            /* 'none of this words' search field*/
             #deepinput4 input[type="text"]{
                 position:absolute;
                 height: 10px;
@@ -67,6 +73,7 @@
                 color:rgb(4, 59, 64);
             }
             
+            /* 'submit buttom*/
             #subimitbtt{
                 position:relative;
                 width: 100px;
@@ -78,7 +85,7 @@
                 color:rgb(4, 59, 64);
             }
 
-            #text1{
+            #text1{ /*All these words*/
                 position:relative;
                 top:150px;
                 right:769px;
@@ -87,7 +94,7 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-             #text2{
+             #text2{ /*This exact word or phrase*/
                 position:relative;
                 top:200px;
                 right:715px;
@@ -96,7 +103,7 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-            #text3{
+            #text3{ /*Any of this words*/
                 position:relative;
                 top:250px;
                 right:760px;
@@ -105,7 +112,7 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-            #text4{
+            #text4{ /*None of these words*/
                 position:relative;
                 top:300px;
                 right:746px;
@@ -114,7 +121,7 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
-            #back a{
+            #back a{ /*back to main page text*/
                 position:absolute;
                 right:120px;
                 top:30px;
@@ -124,6 +131,7 @@
                 font-weight:bold;
             }
 
+            /*google image*/
             #googleimg{
                 position:absolute;
                 width:250px;
@@ -132,7 +140,8 @@
                 left:100px;
 
             }
-            
+
+            /*profile image*/
             #iconimage{
                 position:absolute;
                 top:7px;
@@ -140,6 +149,7 @@
                 width: 70px;
             }
 
+            /*deep search title*/
             #titledeep{
                 position:absolute;
                 top:90px;
@@ -181,7 +191,8 @@
             <input type="text" name="as_eq" placeholder="deep search" form="deep_search" autocomplete="off">
         
         </form>
-
+        
+            <!-- submit button function -->
             <input id="subimitbtt" type="submit" value="submit" form="deep_search">
 
 
