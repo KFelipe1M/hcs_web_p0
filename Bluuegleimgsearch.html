@@ -1,11 +1,9 @@
-<!-- Frist project from Harvard cs50 web course in github, my code have been suggested to several changes -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>IMGSearch</title>
         <style>
             
-        /* top bar */
             #bar{
                 position:fixed;
                 background-color: #514f4f;
@@ -16,8 +14,6 @@
                 top:0px;
             }
 
-            /* background */
-            
             body{
                 background-color: #272525;
                 display:flex;
@@ -58,12 +54,10 @@
                 
             }
 
-            /* Principal search subbimit button */
-            
             #bottsearch{
                 position: relative;
                 top:100px;
-                right:290px;
+                right:260px;
                 width:200px;
                 padding:10px 20px;
                 font-size:25px;
@@ -71,24 +65,10 @@
                 
             }
 
-            /* "I feeling lucky" button (not functional yet) */
-            #bottlucky{
-                position: relative;
-                top:100px;
-                right:190px;
-                width:200px;
-                padding:10px 20px;
-                font-size:25px;
-                color:rgb(13, 41, 73);
-                
-            }
-
-            /* search bar */
-            
             input[type="text"]{
                 position:relative;
                 width: 420px;
-                left: 190px;
+                left: 80px;
                 padding: 10px 15px;
                 font-size:20px;
                 color:rgb(4, 59, 64);
@@ -109,7 +89,6 @@
              width: 160px;
             }
 
-            /* harvard-image */
             #iconimage{
                 position:absolute;
                 top:7px;
@@ -117,45 +96,33 @@
                 width: 70px;
             }
 
-            /* bluuegle-image */
             #imagegoogle{
                 position:relative;
+                right:00px;
             }
 
         </style>
     </head>
     <body>
         <div id="bar"> </div>
-        
-        <!-- advanced-search page link -->
         <div style="color:rgb(56, 86, 143)" id="bott">
             <a href="Bluuegledeepsearch.html"> advanced search </a>
         </div>
-        
-        <!-- image-search page link (not functional) -->
         <div id="bott2" style="color:rgb(56, 86, 143)" id="bott">
-            <a href=""> Image search </a>
-            <a href="Bluuegleimgsearch.html"> Image search </a>
+            <a href="Bluuegle.html"> back to normal search </a>
         </div>
-    
         <div>
-            <img src="guugle.jpg"  alt="gogle" width="700" height="300"> <!-- Blue google-image -->
+            <img src="guugle.jpg"  alt="gogle" width="700" height="300"> 
         </div>
-           
-        <!-- search and submmit function -->
-        <div>
-            <form id=#my action="https://www.google.com/search" >
-            <input id="input" type="text" name="q">  <!-- search function -->
-            <input id="bottsearch" type="submit" value="Google Search">   <!-- search buttom function -->
-            <input id= bottlucky type="submit" value="I feeling lucky!">  <!-- I feeling luck function -->
+            <div>
+            <form id=#my action="http://images.google.com/images" >
             <input id="input" type="text" name="q" autocomplete="off">
-            <input id="bottsearch" type="submit" value="Google Search"> 
-            <input id= bottlucky type="submit" value="I feeling lucky!">
+            <input id="bottsearch" type="submit" value="Image Search" > 
             </div>
         </form>
         
             <div>
-                <img id="iconimage" src="icon.jpg">  <!-- profile image -->
+                <img id="iconimage" src="icon.jpg">
             </div>
     </body>
 </html>
